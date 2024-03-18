@@ -1,8 +1,9 @@
 {
   "name": "josh-higgins-dev",
+  "homepage": "https://higgins723.github.io/josh-higgins-dev/",
   "version": "1.0.0",
   "private": true,
-  "description": "josh-higgins-dev",
+  "description": "Personal website for Josh Higgins, hosted on Github Pages",
   "author": "Higgins723",
   "keywords": [
     "gatsby"
@@ -13,7 +14,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "deploy": "gatsby build && gh-pages -d public"
   },
   "dependencies": {
     "autoprefixer": "^10.4.18",
@@ -28,6 +30,7 @@
     "@types/node": "^20.11.19",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
+    "gh-pages": "^6.1.1",
     "typescript": "^5.3.3"
   }
 }
