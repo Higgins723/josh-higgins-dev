@@ -1,8 +1,8 @@
 import React from 'react'
 import type { HeadFC } from 'gatsby'
 
-type LayoutProps = {
-  children: React.ReactNode;
+interface LayoutProps {
+  children: React.ReactNode
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => (
