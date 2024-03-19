@@ -2302,13 +2302,6 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-helmet@^6.1.11":
-  version "6.1.11"
-  resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-6.1.11.tgz#8cafcafff38f75361f451563ba7b406b0c5d3907"
-  integrity sha512-0QcdGLddTERotCXo3VFlUSWO3ztraw8nZ6e3zJSgG7apwV5xt+pJUS8ewPBqT4NYB1optGLprNQzFleIY84u/g==
-  dependencies:
-    "@types/react" "*"
-
 "@types/react@*", "@types/react@^18.2.55":
   version "18.2.66"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.66.tgz#d2eafc8c4e70939c5432221adb23d32d76bfe451"
@@ -5539,13 +5532,6 @@ gatsby-plugin-postcss@^6.13.1:
   dependencies:
     "@babel/runtime" "^7.20.13"
     postcss-loader "^7.3.3"
-
-gatsby-plugin-react-helmet@^6.13.1:
-  version "6.13.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-6.13.1.tgz#e0a635c00631c14412d3f5bb9d76044ab0ee8a84"
-  integrity sha512-Fwgf2UDOo1LQgw1vUmGmDMK5hXVrIXDR92URzu4DylQWgyfycfQ3D9FdU2JZ8jB6F3OI6Yx6YHC7zL3OAL7iOw==
-  dependencies:
-    "@babel/runtime" "^7.20.13"
 
 gatsby-plugin-typescript@^5.13.1:
   version "5.13.1"
