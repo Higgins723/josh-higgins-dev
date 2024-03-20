@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjosh_higgins_dev=self.webpackChunkjosh_higgins_dev||[]).push([[245],{2783:function(e,n,t){t.r(n),t.d(n,{Head:function(){return i}});var l=t(6540),u=t(4078);n.default=()=>l.createElement(u.A,null,l.createElement("main",null,"Future home of my portfolio"));const i=()=>l.createElement("title",null,"Josh Higgins - Developer")}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-9a732db31d1be7538999.js.map
