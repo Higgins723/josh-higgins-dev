@@ -13,7 +13,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
               <span className='text-red-500'>Oops!</span> Page not found
             </h6>
             <p className='mb-8 text-center text-gray-500 md:text-lg'>
-              The page you’re looking for doesn’t exist.
+              The page you&apos;re looking for doesn&apos;t exist.
             </p>
             <Link to='/' className='px-6 py-2 text-sm font-semibold text-blue-800 bg-blue-100'>Go home</Link>
           </div>
