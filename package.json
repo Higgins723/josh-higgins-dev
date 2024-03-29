@@ -2,6 +2,9 @@
   "name": "josh-higgins-dev",
   "homepage": "https://higgins723.github.io/josh-higgins-dev/",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=20.11.1"
+  },
   "private": true,
   "description": "Personal website for Josh Higgins, hosted on Github Pages",
   "author": "Higgins723",
@@ -42,5 +45,6 @@
     "eslint-plugin-react": "^7.34.1",
     "gh-pages": "^6.1.1",
     "typescript": "^5.3.3"
-  }
+  },
+  "packageManager": "yarn@4.1.1"
 }
