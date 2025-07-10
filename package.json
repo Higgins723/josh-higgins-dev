@@ -19,7 +19,8 @@
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
     "lint": "npx eslint . --ext .ts,.tsx",
-    "deploy": "cp CNAME public/ && gatsby build && gh-pages -d public"
+    "deploy": "cp CNAME public/ && gatsby build && gh-pages -d public",
+    "deploy:powershell": "powershell -Command \"Copy-Item -Path 'CNAME' -Destination 'public'\" && gatsby build && gh-pages -d public"
   },
   "dependencies": {
     "autoprefixer": "^10.4.18",
