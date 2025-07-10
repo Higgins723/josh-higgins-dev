@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkjosh_higgins_dev=self.webpackChunkjosh_higgins_dev||[]).push([[245],{4399:function(e,n,t){var l=t(6540);n.A=e=>{let{children:n}=e;return l.createElement(l.Fragment,null,n)}},2783:function(e,n,t){t.r(n),t.d(n,{Head:function(){return u}});var l=t(6540),r=t(4399);n.default=()=>l.createElement(r.A,null,l.createElement("main",null,"Future home of my portfolio"));const u=()=>l.createElement("title",null,"Josh Higgins - Developer")}}]);
-//# sourceMappingURL=component---src-pages-index-tsx-8932c6699c6714c0756a.js.map
