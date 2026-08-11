@@ -197,11 +197,14 @@ export function GameWorld() {
     setPanel(hit.panel)
   }, [])
 
-  useGameLoop(true, () => {
+  useGameLoop(true, (dt) => {
     const s = sim.current
     const k = keys.current
     const t = touch.current
     frame.current += 1
+
+    // Normalize to the 60fps tuning so high-refresh monitors don't turbo the run
+    const step = dt / WORLD.frameMs
 
     const left = k.left || t.left
     const right = k.right || t.right
@@ -220,10 +223,10 @@ export function GameWorld() {
     }
     s.jumpHeld = jump
 
-    s.vy += WORLD.gravity
+    s.vy += WORLD.gravity * step
     const prevY = s.y
-    s.x += s.vx
-    s.y += s.vy
+    s.x += s.vx * step
+    s.y += s.vy * step
 
     s.x = Math.max(0, Math.min(WORLD.width - WORLD.playerWidth, s.x))
 

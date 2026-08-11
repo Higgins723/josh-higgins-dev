@@ -90,14 +90,21 @@ export const METRICS: Metric[] = [
   { label: 'Customers migrated', value: '100%' },
 ]
 
-/** World layout constants (px) */
+/**
+ * World layout + physics.
+ * moveSpeed / gravity / jumpVelocity are tuned as “per 60fps frame” units;
+ * GameWorld scales them by dt so 60Hz, 144Hz, and 240Hz feel the same.
+ */
 export const WORLD = {
   width: 9800,
   height: 720,
   groundY: 560,
+  /** px/frame @ 60fps → scaled by dt in the game loop */
   gravity: 0.55,
-  moveSpeed: 5.2,
-  jumpVelocity: -12.5,
+  moveSpeed: 6.0,
+  jumpVelocity: -13.8,
+  /** Reference frame duration (ms) the physics numbers were tuned for */
+  frameMs: 1000 / 60,
   playerWidth: 36,
   playerHeight: 48,
 } as const
