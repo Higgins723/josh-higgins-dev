@@ -1,49 +1,51 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
+# joshhiggins.dev — Career Quest
 
-## 🚀 Quick start
+Interactive side-scrolling portfolio for **Joshua Higgins**. Walk through education, experience, skills, and contact in a game-inspired world.
 
-1.  **Create a Gatsby site.**
+**Live:** [https://joshhiggins.dev](https://joshhiggins.dev)
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+## Stack
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+- React 19 + TypeScript
+- Vite 7
+- Tailwind CSS 4
+- Framer Motion
+- GitHub Pages (Actions deploy) + custom domain
 
-2.  **Start developing.**
+## Develop
 
-    Navigate into your new site’s directory and start it up.
+```bash
+npm install
+npm run dev
+```
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## Build
 
-3.  **Open the code and start customizing!**
+```bash
+npm run build
+npm run preview
+```
 
-    Your site is now running at http://localhost:8000!
+## Controls
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+| Input | Action |
+|-------|--------|
+| ← → / A D | Move |
+| Space / W / ↑ | Jump |
+| E / Enter | Inspect landmark |
+| Esc | Close panel |
 
-4.  **Learn more**
+On mobile, on-screen pads appear at the bottom.
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+## Deploy
 
-## 🚀 Quick start (Netlify)
+Pushes to `master` / `main` run [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+In the GitHub repo:
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+1. **Settings → Pages → Source:** GitHub Actions  
+2. Custom domain: `joshhiggins.dev` (CNAME is in `public/CNAME`)
+
+## Content
+
+Edit [`src/content/portfolio.ts`](src/content/portfolio.ts) for roles, skills, metrics, and world layout. Resume PDF lives at `public/Joshua-Higgins-Resume-2026.pdf`.

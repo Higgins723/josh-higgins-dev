@@ -1,0 +1,51 @@
+{
+  "name": "josh-higgins-dev",
+  "homepage": "https://higgins723.github.io/josh-higgins-dev/",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=20.11.1"
+  },
+  "private": true,
+  "description": "Personal website for Josh Higgins, hosted on Github Pages",
+  "author": "Higgins723",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit",
+    "lint": "npx eslint . --ext .ts,.tsx",
+    "deploy": "cp CNAME public/ && gatsby build && gh-pages -d public",
+    "deploy:powershell": "powershell -Command \"Copy-Item -Path 'CNAME' -Destination 'public'\" && gatsby build && gh-pages -d public"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.18",
+    "gatsby": "^5.13.3",
+    "gatsby-plugin-postcss": "^6.13.1",
+    "postcss": "^8.4.36",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^7.3.1",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.34.1",
+    "gh-pages": "^6.1.1",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "yarn@4.1.1"
+}
